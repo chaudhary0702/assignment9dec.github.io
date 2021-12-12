@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body{
+                background: linear-gradient( #bbc46c, #9b59b6, #bbc46c);
+                text-align: center;
+                font-size: 26px;
+                margin-top: 250px;
+                margin-right: 250px;
+                margin-bottom: 250px;
+                margin-left: 250px;
+            }
+        </style>
+        
+        <script type="text/javascript">
+            function multiplyBy()
+            {
+    
+                num1 = document.getElementById("firstNumber").value;
+                num2 = document.getElementById("secondNumber").value;
+                num3 = document.getElementById("thirdNumber").value;
+                document.getElementById("result").innerHTML = num1 * num2 * num3;
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form>
+            1st Number : <input type="text" id="firstNumber" />
+            <br>
+            <br>
+            2nd Number: <input type="text" id="secondNumber" />
+            <br>
+            <br>
+            3rd Number : <input type="text" id="thirdNumber" />
+            <br>
+            <br>
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+        </form>
+        <p>The Result is : <br>
+            <span id = "result"></span>
+        </p>
+    </body>
+</html>
